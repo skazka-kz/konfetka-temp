@@ -8,6 +8,7 @@ import {
   PatternOverlay,
   SectionDivider
 } from "../presentation/Section";
+import ShopList from "../presentation/ShopSelector/ShopList";
 
 class AboutSection extends React.Component {
   render(){
@@ -20,6 +21,7 @@ class AboutSection extends React.Component {
         <SectionDivider/>
       </Content>
 
+      <ShopList/>
     </SectionContainer>
   };
 }

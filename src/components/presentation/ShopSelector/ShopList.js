@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import axios from "axios";
-import { GreyText } from "../../styled/frontPageCollection";
 import { DropDown, ShopListDiv, ShopListWrapper } from "./styledCollection";
 import DetailsView from "./DetailsView";
 import ShopGallery from "./ShopGallery";
 
-class ShopList extends Component {
+class ShopList extends React.Component {
   constructor(props) {
     super(props);
 
@@ -47,7 +46,7 @@ class ShopList extends Component {
     return (
       <ShopListWrapper>
         <ShopListDiv>
-          <GreyText>Выберите магазин из списка</GreyText>
+          <p>Выберите магазин из списка</p>
           <DropDown onChange={this.handleShopSelect.bind(this)}>
             <option key="initial" value="">
               Выберите магазин

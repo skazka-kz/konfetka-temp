@@ -1,40 +1,13 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-import candyPattern from "../../../resources/candy_pattern.png";
-
 const orange = "#fc5f21";
 /*const brown = "#70401C";
 const lightGrey = "#A2A2A2";
 const darkGrey = "#686868";*/
 
-export const CandyOverlay = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url(${candyPattern});
-  z-index: -2;
-`;
-export const TransparencyLayer = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: white;
-  background: -webkit-linear-gradient(
-    rgba(255, 255, 255, 0.25),
-    white,
-    rgba(0, 0, 0, 0)
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.65),
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.65)
-  );
-`;
-
 export const ShopListWrapper = styled.div`
+  align-self: center;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -171,12 +144,11 @@ export const FakeImage = styled.div`
   @media (min-width: 768px) {
     height: 150px;
   }
-  
+
   @media (min-width: 1024px) {
     width: 240px;
     height: 170px;
   }
-  
 `;
 
 export const PlaceholderImage = () => <FakeImage>Фото скоро будет</FakeImage>;

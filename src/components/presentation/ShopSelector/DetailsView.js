@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import {
   BlackFakeText,
   CenteredCell,
@@ -8,13 +7,9 @@ import {
   OrangeFakeText,
   GreySpan
 } from "./styledCollection";
-import {
-  OrangeHeader
-} from "../../styled/frontPageCollection";
 
-
-import locSymbol from "../../../resources/location.png";
-import timeSymbol from "../../../resources/time.png";
+import locSymbol from "../../../static/location.png";
+import timeSymbol from "../../../static/time.png";
 
 const DetailsView = props => {
   if (props.isLoading) {
@@ -49,7 +44,7 @@ const DetailsView = props => {
     ];
   } else {
     return [
-      <OrangeHeader key="or">{props.shop.title}</OrangeHeader>,
+      <h1 key="or">{props.shop.title}</h1>,
       <DetailsTable key="ora">
         <tbody>
         <tr>
@@ -81,11 +76,6 @@ const DetailsView = props => {
       </DetailsTable>
     ];
   }
-};
-
-DetailsView.propTypes = {
-  isLoading: PropTypes.bool,
-  shop: PropTypes.object
 };
 
 export default DetailsView;

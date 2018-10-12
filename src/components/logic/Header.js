@@ -13,9 +13,9 @@ class Header extends React.Component {
     return <HeaderContainer>
       <LogoContainer><img src={logo} alt="Конфетка Кокшетау Лого"/></LogoContainer>
       <LinkContainer>
-        <Link>О Нас</Link>
-        <Link>Карта</Link>
-        <Link>Контакты</Link>
+        <Link href="#">О Нас</Link>
+        <Link href="#">Карта</Link>
+        <Link href="#">Контакты</Link>
       </LinkContainer>
     </HeaderContainer>;
   }
